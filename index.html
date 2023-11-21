@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Coladilla - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 id="logo"><span id="letterC">C</span>hristian</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <p>lorem ipsum</p>
+            <h1>Hello, I am <br> <span>Christian</span> Coladilla</h1>
+        </div>
+    </div>
+</div>
+
+<!-- for about section -->
+
+<div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda cum, libero facere recusandae in neque totam nobis aperiam adipisci, maxime ipsam molestiae quos exercitationem! Explicabo accusamus quam autem iusto.</p>
+                
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab(event, 'experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab(event, 'education')">Education</div>
+                    </div>
+                    <!-- contents of the tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br> Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2023 - July 2023</span><br> Internship</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br> Technological University of the Philippines-Manila</li>
+                            <li><span>2018</span><br> La Consolacion College-Caloocan</li>
+                            <li><span>2016</span><br> Caloocan High School</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="about-col-2">
+                    <img src="images/gradPic.jpg" class="aboutImg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- this is for services section-->
+
+<script src="script.js"></script>
+</body>
+</html>
