@@ -15,13 +15,15 @@
 
         <nav>
             <h1 id="logo"><span id="letterC">C</span>hristian</h1>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="headerRow">
@@ -45,7 +47,7 @@
 <div>
     <div id="about">
         <div class="container">
-            <div class="row">
+            <div class="row" id="aboutRowWrap">
                 <div class="about-col-1">
                     <h1 class="sub-title">About Me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda cum, libero facere recusandae in neque totam nobis aperiam adipisci, maxime ipsam molestiae quos exercitationem! Explicabo accusamus quam autem iusto.</p>
@@ -174,7 +176,7 @@
 </div>
 
 <!-- this is for contacts section -->
-<div id="contacts">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -189,10 +191,10 @@
                 <a href="images/Coladilla-CV-Resume.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Enter Your Name" required>
-                    <input type="email" name="email" placeholder="Enter Your Email" required>
-                    <textarea name="message" id="" rows="6" placeholder="Enter Your Message"></textarea>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Enter Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>

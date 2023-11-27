@@ -14,11 +14,34 @@
     document.getElementById(tabname).classList.add("active-tab");
  }
  
+var menu = document.getElementById("sidemenu");
+
+function openmenu(){
+    menu.style.right = "0";
+}
+function closemenu(){
+    menu.style.right = "-200px";
+}
+
+
+/** script for contact send email */
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ZtXdml7Y8QJf3HNamoZ5wlHnq-L5T1Xoj4pPrfNWQGHYyI4_ULTU9rL7HaQMWHlJ/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
+
+
+
 
 
  /** script for particles */
 
- particlesJS('particles-js',
+  particlesJS('particles-js',
   
   {
     "particles": {
