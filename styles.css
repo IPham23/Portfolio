@@ -504,3 +504,85 @@ form .btn2{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* STYLES FOR more.html*/
+.projContainer{
+    padding: 30px 10%;
+}
+.fa-arrow-left{
+    color: #fff;
+    font-size: 40px;
+   
+}
+.fa-arrow-left:hover{
+    color: #70afa2;
+    transition: 0.3s;
+}
+
+.fa-arrow-left:hover::after{
+    width: 100%;
+}
+.title{
+    padding: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+}
+.title h1 span{
+    color: #70afa2;
+}
+.projectsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.projectsList .project{
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    background-color: rgba(0, 217, 255, 0.5);
+    transition: 0.5s;
+}
+.projectsList .project:hover{
+    transition: background-color 0.5s, transform 0.5s;
+    transform: scale(1.1);
+    background-color: rgb(180, 36, 180);
+}
+.project img{
+    width: 35%;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0px 20px 20px;
+    transition: 0.5s;
+}
+.project img:hover{
+    width: 40%;
+    cursor: pointer;
+
+}
+
+.project .description{
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.project .description h4{
+    padding-top: 30px;
+}
