@@ -32,7 +32,7 @@
             </div>
             <div class="header-col-2"> 
                 <div class="header-text">
-                    <p>lorem ipsum</p>
+                    <p>Information Technology</p>
                     <h1>Hello, I am <br> <span>Christian</span> Coladilla</h1>
                 </div>
             </div>
@@ -50,7 +50,15 @@
             <div class="row" id="aboutRowWrap">
                 <div class="about-col-1">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda cum, libero facere recusandae in neque totam nobis aperiam adipisci, maxime ipsam molestiae quos exercitationem! Explicabo accusamus quam autem iusto.</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp     
+                        Hello! I recently obtained a Bachelor of Science in Information Technology degree
+                        from the Technological University of the Philippines—Manila. Throughout my academic career, 
+                        I have developed a solid foundation in a number of IT-related areas of study. 
+                        I'm a type of person who is open to learning new things. 
+                        My aim is to join a dynamic team where I can grow and contribute 
+                        meaningfully while offering my technical expertise and new viewpoint.
+                    </p>
+
                 
                     <div class="tab-titles">
                         <div class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</div>
@@ -60,25 +68,62 @@
                     <!-- contents of the tab -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br> Design Web/App Interfaces</li>
-                            <li><span>Web Development</span><br> Web App Development</li>
-                            <li><span>App Development</span><br> Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>March 2023 - July 2023</span><br> Internship</li>
+                            <li class="skills-list active-skill" onclick="openlist(choice, 'web')"><span>Web Development</span><br> </li>
+                            <li class="skills-list" onclick="openlist(choice, 'app')"><span>Application Development</span><br></li>
+                            <li class="skills-list" onclick="openlist(choice, 'microcontroller')"><span>Microcontroller Programming</span><br> </li>
+                            <li class="skills-list" onclick="openlist(choice, 'database')"><span>Database Management</span><br> </li>
+                            <li class="skills-list" onclick="openlist(choice, 'networking')"><span>Computer Networking</span><br> </li>
+                            <li class="skills-list" onclick="openlist(choice, 'relatedapp')"><span>IT Related Applications</span><br> </li>
 
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br> Technological University of the Philippines-Manila</li>
-                            <li><span>2018</span><br> La Consolacion College-Caloocan</li>
-                            <li><span>2016</span><br> Caloocan High School</li>
-                        </ul>
-                    </div>
+                        <div class="skills-expand">
+                            <div id="web">
+                                <ul>HTML</ul>
+                                <ul>CSS<ul>
+                                <ul>JavaScript</ul>
+                                <ul>PHP</ul>
+                            </div>
+                            <div id="app">
+                                <ul>Java Programming</ul>
+                                <ul>C Programming</ul>
+                                <ul>C++ Programming</ul>
+                                <ul>Python Programming</ul>
+                                <ul>React Native</ul> 
+                            </div>
+                            <div id="microcontroller">
+                                <ul>Arduino Uno</ul>
+                            </div>
+                            <div id="database">
+                                <ul>MySQL</ul>
+                                <ul>Oracle DBMS</ul>
+                                <ul>Mongo DB</ul>
+                            </div>
+                            <div id="networking">
+                                <ul>Packet Tracer Simulation</ul>
+                                <ul>IP Addressing and Subnetting</ul>
+                                <ul>Networking Concepts and Protocols</ul>
+                            </div>
+                            <div id="relatedapp">
+                                <ul>Vegas Pro</ul>
+                                <ul>Canva</ul>
+                                <ul>Figma</ul>
+                                <ul>Adobe Photoshop</ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>March 2023 - July 2023</span><br> Internship</li>
 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br> Technological University of the Philippines-Manila</li>
+                                <li><span>2018</span><br> La Consolacion College-Caloocan</li>
+                                <li><span>2016</span><br> Caloocan High School</li>
+                            </ul>
+                        </div>
                 </div>
                 <div class="about-col-2">
                     <img src="images/gradPic.jpg" class="aboutImg">

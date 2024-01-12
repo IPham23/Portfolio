@@ -14,6 +14,8 @@
     document.getElementById(tabname).classList.add("active-tab");
  }
  
+
+ /** for side Menu */
 var menu = document.getElementById("sidemenu");
 
 function openmenu(){
@@ -22,6 +24,8 @@ function openmenu(){
 function closemenu(){
     menu.style.right = "-200px";
 }
+
+
 
 
 /** script for contact send email */
