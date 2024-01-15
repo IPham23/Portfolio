@@ -68,49 +68,67 @@
                     <!-- contents of the tab -->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li class="skills-list active-skill" onclick="openlist(choice, 'web')"><span>Web Development</span><br> </li>
-                            <li class="skills-list" onclick="openlist(choice, 'app')"><span>Application Development</span><br></li>
-                            <li class="skills-list" onclick="openlist(choice, 'microcontroller')"><span>Microcontroller Programming</span><br> </li>
-                            <li class="skills-list" onclick="openlist(choice, 'database')"><span>Database Management</span><br> </li>
-                            <li class="skills-list" onclick="openlist(choice, 'networking')"><span>Computer Networking</span><br> </li>
-                            <li class="skills-list" onclick="openlist(choice, 'relatedapp')"><span>IT Related Applications</span><br> </li>
+                            <li class="skills-lists active-skill" onclick="openlist(event, 'web')"><span>Web Development</span><br> </li>
+                            <div class="skills-expands active-expand" id="web">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            
+                            <li class="skills-lists" onclick="openlist(event, 'app')"><span>Application Development</span><br></li>
+                            <div class="skills-expands" id="app">
+                                <ul>
+                                    <li>Java Programming</li>
+                                    <li>C Programming</li>
+                                    <li>C++ Programming</li>
+                                    <li>Python Programming</li>
+                                    <li>React Native</li>
+                                </ul>
+                            </div>
+
+                            <li class="skills-lists" onclick="openlist(event, 'database')"><span>Database Management</span><br> </li>
+                            <div class="skills-expands" id="database">
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>Oracle DBMS</li>
+                                    <li>Mongo DB</li>
+                                </ul>
+                            </div>
+
+                            <li class="skills-lists" onclick="openlist(event, 'microcontroller')"><span>Microcontroller Programming</span><br> </li>
+                            <div class="skills-expands" id="microcontroller">
+                                
+                                <ul>
+                                    <li>Arduino Uno</li>
+                                </ul>
+                            </div>
+
+                            <li class="skills-lists" onclick="openlist(event, 'networking')"><span>Computer Networking</span><br> </li>
+                            <div class="skills-expands" id="networking">
+                                <ul>
+                                    <li>Packet Tracer Simulation</li>
+                                    <li>IP Addressing and Subnetting</li>
+                                    <li>Networking Concepts and Protocols</li>
+                                </ul>
+                            </div>
+
+                            <li class="skills-lists" onclick="openlist(event, 'relatedapp')"><span>IT Related Applications</span><br> </li>
+                            <div class="skills-expands" id="relatedapp">
+                                <ul>
+                                    <li>Vegas Pro</li>
+                                    <li>Canva</li>
+                                    <li>Figma</li>
+                                    <li>Adobe Photoshop</li>
+                                </ul>
+                            </div>
 
                         </ul>
                     </div>
-                        <div class="skills-expand">
-                            <div id="web">
-                                <ul>HTML</ul>
-                                <ul>CSS<ul>
-                                <ul>JavaScript</ul>
-                                <ul>PHP</ul>
-                            </div>
-                            <div id="app">
-                                <ul>Java Programming</ul>
-                                <ul>C Programming</ul>
-                                <ul>C++ Programming</ul>
-                                <ul>Python Programming</ul>
-                                <ul>React Native</ul> 
-                            </div>
-                            <div id="microcontroller">
-                                <ul>Arduino Uno</ul>
-                            </div>
-                            <div id="database">
-                                <ul>MySQL</ul>
-                                <ul>Oracle DBMS</ul>
-                                <ul>Mongo DB</ul>
-                            </div>
-                            <div id="networking">
-                                <ul>Packet Tracer Simulation</ul>
-                                <ul>IP Addressing and Subnetting</ul>
-                                <ul>Networking Concepts and Protocols</ul>
-                            </div>
-                            <div id="relatedapp">
-                                <ul>Vegas Pro</ul>
-                                <ul>Canva</ul>
-                                <ul>Figma</ul>
-                                <ul>Adobe Photoshop</ul>
-                            </div>
-                        </div>
+
+                            
                         <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>March 2023 - July 2023</span><br> Internship</li>

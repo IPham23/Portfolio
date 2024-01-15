@@ -14,6 +14,36 @@
     document.getElementById(tabname).classList.add("active-tab");
  }
  
+/** for skills expand */
+var skillslist, skillsexpand;
+ 
+var skillslists = document.getElementsByClassName("skills-lists")
+var skillsexpands = document.getElementsByClassName("skills-expands")
+
+function openlist(event, skillname){
+  // Remove "active-expand" class from all skills expands
+   for(skillsexpand of skillsexpands){
+      skillsexpand.classList.remove("active-expand");
+    }
+  // Remove "active-skill" class from all skills lists
+   for(skillslist of skillslists){
+      skillslist.classList.remove("active-skill");
+      skillslist.style.fontWeight = "normal";  // Set font weight back to normal for all skills lists
+    }
+  // Add "active-skill" class to the clicked skills list item
+   event.currentTarget.classList.add("active-skill");
+   event.currentTarget.style.fontWeight = "bold";
+   
+  // Add "active-expand" class to the corresponding skills expand
+   var selectedExpand = document.getElementById(skillname);
+   if (selectedExpand){
+    selectedExpand.classList.add("active-expand");
+   }
+
+}
+
+
+
 
  /** for side Menu */
 var menu = document.getElementById("sidemenu");
