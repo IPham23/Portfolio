@@ -80,14 +80,14 @@ form.addEventListener('submit', e => {
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 150,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1200
         }
       },
       "color": {
-        "value": "#23faf2"
+        "value": "#fab1b1"
       },
       "shape": {
         "type": "circle",
@@ -127,7 +127,7 @@ form.addEventListener('submit', e => {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#252e2c",
         "opacity": 0.4,
         "width": 1
       },

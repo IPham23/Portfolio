@@ -10,8 +10,9 @@ html{
 }
 
 body{
-    background-color: #1d1d1f;
-    color: #fff;
+    background: rgb(246,244,240);
+    background: radial-gradient(circle, rgba(246,244,240,1) 0%, rgba(224,233,237,1) 100%);   
+    color: #313131;
 }
 p{
     font-size: 1rem;
@@ -55,12 +56,19 @@ nav .fa-solid{
 }
 
 #logo{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #letterC{
-    font-size: 4rem;
-    color: #70afa2;
+    font-size: 3rem;
+    color: #6096B4;
+}
+#dot{
+    color: #fab1b1;
+}
+/* for hristian */
+#highlight{
+    color:#93BFCF;
 }
 
 nav ul li{
@@ -70,8 +78,9 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #6096B4;
     text-decoration: none;
+    font-weight: 800;
     font-size: 18px;
     position: relative;
 }
@@ -80,7 +89,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #70afa2;
+    background: #fab1b1;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -122,11 +131,11 @@ nav ul li a:hover::after{
 }
 
 .header-col-2 .header-text h1{
-    margin-top: 30px;
+    margin: 30px 0;
     font-size: 3rem;
 }
 .header-col-2 .header-text h1 span{
-    color: #70afa2;
+    color: #fab1b1;
 }
 
 /* about me section */
@@ -134,7 +143,7 @@ nav ul li a:hover::after{
 #about{
     margin-top: 30px;
     padding: 80px 0;
-    color: #ababab;
+    color: #6096B4;
     
 }
 #about p{
@@ -149,7 +158,7 @@ nav ul li a:hover::after{
 
 .skills-expands ul li{
     list-style-type: circle;
-    color: rgb(168, 168, 168);
+    color: #252e2c;
     
 }
 .skills-expands.active-expand{
@@ -168,14 +177,15 @@ nav ul li a:hover::after{
     flex-basis: 55%;
 }
 .sub-title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
-    color: #fff;   
+    color: #252e2c;   
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 25px;
+    color:#252e2c;
 }
 
 .tab-links{
@@ -189,7 +199,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(112, 175, 162);
+    background: #fab1b1;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -208,19 +218,25 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     margin: 12px 0;
 }
+.tab-contents ul li span{
+    color:#252e2c;
+}
+
+.skills-expands ul li{
+    color: #6096B4;
+}
 .tab-contents ul .skills-lists span:hover{
     cursor: pointer;
-    transition: 0.5s;
-    color: rgb(0, 255, 204);
-    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fab1b1;
+    font-size: 1.1rem;
 }
 .tab-contents ul .skills-lists span::after{
-font-size: 1.5rem;
-    color: rgb(0, 255, 204);
+    font-size: 1.5rem;
+    color: #6096B4;
 }
 .tab-contents ul span{
-    color: rgb(112, 175, 162);
-
+    color: #6096B4;
     font-size: 1rem;
 }
 .tab-contents{
@@ -252,8 +268,8 @@ font-size: 1.5rem;
     margin-top: 50px;
 }
 .services-list div{
-    background: #70afa2;
-    padding: 40px;
+    background: #93BFCF;
+    padding: 20px 40px;
     font-size: 13px;
     font-weight: 400;
     border-radius: 10px;
@@ -279,9 +295,10 @@ font-size: 1.5rem;
     margin-top: 20px;
     color: #fff;
     display: inline-block;
+    font-weight: 800;
 }
 .services-list div:hover{
-    background-color: #1d1d1f;
+    background-color: #fab1b1;
     transform: translateY(-10px);
 }
 
@@ -289,7 +306,7 @@ font-size: 1.5rem;
 
 #portfolio{
     padding: 80px 0;
-    color: #ababab;
+    color: #6096B4;
 }
 .work-list{
     display: grid;
@@ -313,7 +330,7 @@ font-size: 1.5rem;
 .layer{
     height: 0%;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #70afa2);
+    background: linear-gradient(rgba(218, 218, 218, 0.6), #fab1b1);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -340,8 +357,8 @@ font-size: 1.5rem;
     margin-top: 50px;
     font-size: 2rem;
     text-decoration: none;
-    color: #70afa2;
-    background: #fff;
+    color: #252e2c;
+    background: #93BFCF;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -349,7 +366,7 @@ font-size: 1.5rem;
     line-height: 50px;
 }
 .layer i:hover{
-    color: #70afa2;
+    color: #fab1b1;
     transform: translateY(-10px);
     transition: color 0.5s, transform 0.5s;
 }
@@ -367,15 +384,15 @@ font-size: 1.5rem;
     display: block;
     margin: 40px auto;
     width: fit-content;
-    border: 1px solid #70afa2;
+    border: 1px solid #6096B4;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #252e2c;
     
 }
 .btn:hover{
-    background-color: #70afa2;
+    background-color: #fab1b1;
     transform: scale(1.1);
     transition: background-color 0.5s, transform 0.5s;
 }
@@ -389,7 +406,7 @@ font-size: 1.5rem;
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #fff;
+    color: #93BFCF;
     margin-right: 15px;
     font-size: 2rem;
 }
@@ -400,18 +417,18 @@ font-size: 1.5rem;
     text-decoration: none;
     margin-right: 20px;
     font-size: 2rem;
-    color: #fff;
+    color: #6096B4;
     display: inline-block;
 }
 .social-icons a:hover{
-    color: #70afa2;
-    transition: color 0.3s, transform 0.5s;
-    transform: scale(1.1);
+    color: #fab1b1;
+    transition: color 0.5s, transform 0.8s;
+    transform: scale(1.5);
 }
 
 .btn.btn2{
     display: inline-block;
-    background-color: #70afa2;
+    background-color: #fab1b1;
 }
 .contact-right{
     flex-basis: 60%;
@@ -426,11 +443,11 @@ form input, form textarea{
     border: 0;
     padding: 10px;
     margin: 10px 0;
-    background: #262626;
+    background: #BDCDD6;
     outline: none;
     resize: none;
     font-size: 1rem;
-    color: #fff;
+    color: #252e2c;
     border-radius: 6px;
 }
 form .btn2{
@@ -443,7 +460,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #BDCDD6;
     font-weight: 500;
     margin-top: 20px;
 }
@@ -464,7 +481,7 @@ form .btn2{
         font-size: 35px;
     }
     nav ul{
-        background: #70afa2;
+        background: #fab1b1;
         position: fixed;
         top: 0;
         right: -200px;
@@ -527,7 +544,7 @@ form .btn2{
         flex-basis: 100%;
     }
     .about-col-2{
-        padding: 20px 0;
+        padding-top: 80px;
     }
     .about-col-1{
         font-size: 16px;
@@ -555,7 +572,7 @@ form .btn2{
         font-size: 35px;
     }
     nav ul{
-        background: #70afa2;
+        background: #fab1b1;
         position: fixed;
         top: 0;
         right: -200px;
@@ -617,7 +634,7 @@ form .btn2{
         flex-basis: 100%;
     }
     .about-col-2{
-        padding: 20px 0;
+        padding: 80px 0;
     }
     .about-col-1{
         font-size: 16px;
@@ -636,7 +653,7 @@ form .btn2{
 }
 
 /*=============================================================== for large screen */
-@media only screen and (min-width: 776px) and (max-width: 1100px) {
+@media only screen and (min-width: 775px) and (max-width: 1100px) {
     .header-col-1 .headerImg{
         width: 100%;
         height: 100%;
@@ -648,8 +665,17 @@ form .btn2{
         flex-direction: column;
         
     }
+    nav ul li{
+
+        margin: 10px;
+    }
+    
+    nav ul li a{
+        font-size: 15px;
+    }
     
 }
+
 
 
 
@@ -663,12 +689,12 @@ form .btn2{
     padding: 30px 10%;
 }
 .fa-arrow-left{
-    color: #fff;
+    color: #6096B4;
     font-size: 40px;
    
 }
 .fa-arrow-left:hover{
-    color: #70afa2;
+    color: #fab1b1;
     transition: 0.3s;
 }
 
@@ -683,7 +709,7 @@ form .btn2{
     font-size: 20px;
 }
 .title h1 span{
-    color: #70afa2;
+    color: #6096B4;
 }
 .projectsList{
     display: flex;
@@ -695,13 +721,13 @@ form .btn2{
     border-radius: 10px;
     display: inline-block;
     margin-top: 40px;
-    background-color: rgba(0, 217, 255, 0.5);
+    background-color: rgba(250, 177, 177, 0.5);
     transition: 0.5s;
 }
 .projectsList .project:hover{
     transition: background-color 0.5s, transform 0.5s;
     transform: scale(1.1);
-    background-color: rgb(0, 217, 255);
+    background-color: rgb(250, 177, 177);
 }
 .project img{
     width: 35%;
