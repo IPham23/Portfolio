@@ -224,13 +224,26 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     margin: 12px 0;
 }
+.tab-contents ul li h4{
+    margin: 8px 0;
+}
 .tab-contents ul li span{
     color:#252e2c;
+
+}
+.tab-contents ul li p{
+
+    color: #252e2c;
+    line-height: 1.3rem;
+    text-indent: 5%;
+    text-align: justify;
+
 }
 
 .skills-expands ul li{
     color: #6096B4;
 }
+
 .tab-contents ul .skills-lists span:hover{
     cursor: pointer;
     transition: 0.3s;
@@ -297,11 +310,15 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 20px;
     color: #fff;
     display: inline-block;
     font-weight: 800;
+}
+.services-list div a:hover{
+    color: #6096B4;
+    transition: 0.5s;
 }
 .services-list div:hover{
     background-color: #fab1b1;
@@ -327,6 +344,7 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 200px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s; /* smooth transition for 'transform' scale*/
@@ -335,7 +353,7 @@ nav ul li a:hover::after{
 .layer{
     height: 0%;
     width: 100%;
-    background: linear-gradient(rgba(218, 218, 218, 0.6), #fab1b1);
+    background: linear-gradient(rgba(218, 218, 218, 0.9), #fab1b1);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -349,30 +367,33 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 1rem;
     transition: height 0.5s;
+    color: #252e2c;
 }
 
 .layer h3{
-    font-weight: 500;
+    padding-top: 7%;
+    font-weight: 600;
 }
 .layer p{
     margin-top: 20px;
     font-weight: 300;
 }
 .layer i{
-    margin-top: 50px;
-    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
     text-decoration: none;
     color: #252e2c;
     background: #93BFCF;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
 }
 .layer i:hover{
     color: #fab1b1;
-    transform: translateY(-10px);
+
     transition: color 0.5s, transform 0.5s;
 }
 /*========================= for hover show layer */
@@ -770,6 +791,7 @@ form .btn2{
     vertical-align: top;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project .description h4{
