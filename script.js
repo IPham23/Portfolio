@@ -57,17 +57,46 @@ function closemenu(){
 
 
 
-
 /** script for contact send email */
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ZtXdml7Y8QJf3HNamoZ5wlHnq-L5T1Xoj4pPrfNWQGHYyI4_ULTU9rL7HaQMWHlJ/exec'
-const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ZtXdml7Y8QJf3HNamoZ5wlHnq-L5T1Xoj4pPrfNWQGHYyI4_ULTU9rL7HaQMWHlJ/exec';
+const form = document.forms['submit-to-google-sheet'];
+const successMessage = document.getElementById('success-message');
+
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-})
+  e.preventDefault();
+
+  // Show loading message while submitting
+  successMessage.innerHTML = 'Submitting...';
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      // Hide loading message and show success message
+      successMessage.innerHTML = 'Success! Form submitted.';
+      console.log('Success!', response);
+      alert('Form successfully submitted! Thank you for sending a message.');
+
+      // Automatically remove the success message after 5 seconds
+      setTimeout(() => {
+        successMessage.innerHTML = '';
+      }, 5000);
+      // Clear the form fields after success
+      form.reset();
+    })
+    .catch(error => {
+      // Show error message
+      successMessage.innerHTML = 'Error submitting form. Please try again later.';
+      console.error('Error!', error.message);
+      alert('Form not submitted. Kindly send a direct email.');
+
+      // Automatically remove the error message after 5 seconds
+      setTimeout(() => {
+        successMessage.innerHTML = '';
+      }, 5000);
+    });
+});
+
+
 
 
 
@@ -87,7 +116,7 @@ form.addEventListener('submit', e => {
         }
       },
       "color": {
-        "value": "#fab1b1"
+        "value": "#0F4C75"
       },
       "shape": {
         "type": "circle",
@@ -127,7 +156,7 @@ form.addEventListener('submit', e => {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#252e2c",
+        "color": "#8ecae6",
         "opacity": 0.4,
         "width": 1
       },

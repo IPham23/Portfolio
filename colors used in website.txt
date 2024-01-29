@@ -1,9 +1,9 @@
 
 
 
-black - 252e2c
-navy blue- 6096B4
-blue - 93BFCF
-grey - BDCDD6
-pink - fab1b1
+black - 8ecae6
+navy blue- ffb703
+blue - 00537a
+grey - 00537a
+pink - fb8500
 
