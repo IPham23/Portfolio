@@ -337,6 +337,8 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background-color: #ffb703;
     transform: translateY(-10px);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 1);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 
 
@@ -364,7 +366,8 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s; /* smooth transition for 'transform' scale*/
-    border: 2px solid #8ecae6;
+    border: 2px solid #fb8500;
+
 }
 /*========================= para ma center ung img within the container*/
 .layer{
@@ -433,7 +436,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #efeeea;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all 0.2s ease-in-out;
 }
 .btn.btn1:hover{
@@ -449,10 +452,11 @@ nav ul li a:hover::after{
     display: inline-block;
     background-color: rgba(251, 133, 0, 1);
     box-shadow: 0 5px 15px rgba(142, 202, 230, 0.4);
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all 0.2s ease-in-out;
     color: #00537a;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 .btn.btn2:hover{
     background-color: #fb8500;
@@ -469,7 +473,7 @@ nav ul li a:hover::after{
     display: inline-block;
     background-color: rgba(251, 133, 0, 0.8);
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all 0.2s ease-in-out;
     font-weight: 800;
 }
@@ -824,20 +828,29 @@ form .btn2{
     padding: 30px 10%;
 }
 .fa-arrow-left{
-    color: #ffb703;
-    font-size: 40px;
-   
+    color: #023047;
+    font-size: 35px;
+    background-color: #ffb703;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #000;
+    
+
 }
 .fa-arrow-left:hover{
-    color: #fb8500;
-    transition: 0.3s;
+    color: #efeeea;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(142, 202, 230, 0.2), 0 6px 20px 0 rgba(142, 202, 230, 0.2);
+
+    
 }
 
 .fa-arrow-left:hover::after{
     width: 100%;
 }
 .title{
-    padding: 2% 0;
+    padding: 5% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -871,9 +884,10 @@ form .btn2{
     width: 100%;
 }
 .projectsList .project:hover{
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
     transform: scale(1.1);
     background-color: rgb(255, 183, 3);
+    box-shadow: 0 4px 8px 0 rgba(142, 202, 230, 0.2), 0 6px 20px 0 rgba(142, 202, 230, 0.2);
 }
 .project img{
     width: 35%;
@@ -887,6 +901,7 @@ form .btn2{
 .project img:hover{
     width: 40%;
     cursor: pointer;
+
 }
 
 .project .details{
