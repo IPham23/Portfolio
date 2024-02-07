@@ -612,7 +612,7 @@ form .btn2{
     border-radius: 10px;
     display: flex;
     margin: 40px 0;
-    background-color: rgba(255, 183, 3, 0.8);
+    background-color: rgba(241, 185, 44, 0.9);
     transition: 0.5s;
     color: #023047;
     width: 100%;
@@ -620,7 +620,7 @@ form .btn2{
 .projectsList .project:hover{
     transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
     transform: scale(1.1);
-    background-color: rgba(255, 183, 3, 0.9);
+    background-color: #f1b92c;
     box-shadow: 0 4px 8px 0 rgba(142, 202, 230, 0.2), 0 6px 20px 0 rgba(142, 202, 230, 0.2);
 }
 .project img{
@@ -1046,17 +1046,4 @@ video {
     .services-list div h2{
         font-size: 1.6rem;
     }
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
-
