@@ -612,9 +612,9 @@ form .btn2{
     border-radius: 10px;
     display: flex;
     margin: 40px 0;
-    background-color: rgba(241, 185, 44, 0.9);
+    background-color: rgba(255, 183, 3, 0.8);
     transition: 0.5s;
-    color: rgba(255, 183, 3, 0.8);
+    color: #023047;
     width: 100%;
 }
 .projectsList .project:hover{
